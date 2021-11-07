@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>City Weather</title>
+  <link rel="icon" type="image/jpg" href="images/dy3.ico"/>
+
+<!-- google Merriweather font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap" rel="stylesheet">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div id="intro" class="container">
+      <h1 class="display-4">Welcome!</h1>
+      <p class="lead">At this website, you can search the weather of any city over the world! The country is defaulted to be United States. You can input a country if needed.</p>
+    </div>
+    <hr class="my-4">
+    <div id="search" class="container">
+      <form action="/" method="post" class="form-horizontal" role="form">
+        <div class="form-inline   search">
+          <label for="cityInput" class="control-label">City Name: </label>
+          <input id="cityInput" type="text" name="cityName" placeholder="Search city" class="form-control">
+        </div>
+        <div class="form-inline">
+          <label for="countryInput" class="control-label">Country Name: </label>
+          <input id="countryInput" type="text" name="countryName" placeholder="United States" value="United States" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Search</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

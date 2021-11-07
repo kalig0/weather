@@ -1,0 +1,46 @@
+body{
+  /* font-family: "Roboto", sans-serif; */
+  background-color: #e3fdfd;
+  background: url("../images/brick-wall.png");
+  font-family: 'Merriweather', serif;
+}
+
+label{
+  font-size: 1.5em;
+  width: 200px;
+}
+
+button{
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.jumbotron{
+    /* margin-left: 100px; */
+    background-color: transparent;
+}
+
+#intro{
+  background-color: #71c9ce;
+}
+
+#search{
+  background-color:#cbf1f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#result{
+  background-color: #71c9ce;
+  padding-top: 20px;
+}
+
+#greeting{
+    margin-top: 150px;
+    /* font-size: 0.5em; */
+    text-align: center;
+}
+
+.heart{
+  color: red;
+}
