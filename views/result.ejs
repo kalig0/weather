@@ -6,10 +6,10 @@
   <title>City Weather</title>
   <link rel="icon" type="image/jpg" href="images/dy3.ico" />
 
-    <!-- google Merriweather font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap" rel="stylesheet">
+  <!-- google Merriweather font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap" rel="stylesheet">
 
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
   <div class="jumbotron jumbotron-fluid">
     <div id="intro" class="container">
       <h1 class="display-4">Welcome!</h1>
@@ -42,7 +41,6 @@
     <hr class="my-4">
     <div id="result" class="container">
       <% imgURL = "http://openweathermap.org/img/wn/" + iconR +"@2x.png"; %>
-
       <% console.log(windSpeedR); %>
       <div>
         <%= cityNameR %>, <%= countryR %>
@@ -51,24 +49,14 @@
         <img src=<%= imgURL %> alt="weather image">
         <%= tempR %> <span>°F</span>
       </div>
-
       <p>The current weather in <%= cityNameR %> is <%= descriptionR %>. </p>
       <p>The temperature is <%= tempR %> degrees Fahrenhait. Feels like <%= feelTempR %> degrees. High temperature is <%= highTempR %> degrees. Low temperature is <%= lowTempR %> degrees. Pressure is <%= pressureR %> hPa. Humidity is
         <%= humidityR %>%.</p>
-      <!-- <% if (windSpeedR > 0) { %>
-        <p>The wind speed is <%= windSpeedR %></p>
-      <% } else { %>
-        <p>There is no wind.</p> -->
-      <!-- <% } %> -->
-
     </div>
-
     <div id="greeting" class="container">
       <span>Brought to you by Daniel Yu with <i class="fas fa-heart heart"></i></span>
     </div>
-
   </div>
-
 </body>
 
 </html>

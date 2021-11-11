@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 app.get("/", function(req, res) {
-  // res.sendFile(__dirname + "/index.html");
   res.render("index");
 });
 
@@ -22,13 +21,13 @@ app.post("/", function(req, res) {
 
   const query = req.body.cityName + "," + req.body.countryName;
   const cityName = _.capitalize(req.body.cityName);
-  // const apiKey = "ddf348689efa33687dceb8b5f5b2be2b";
+
   const unit = "imperial";
   const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + process.env.API_KEY + "&units=" + unit;
 
 
   https.get(url, function(response) {
-    console.log(response);
+    console.log(response.statusCode);
 
     response.on("data", function(data) {
       const weatherData = JSON.parse(data);
@@ -69,9 +68,3 @@ if (port == null || port == "") {
 app.listen(port, function() {
   console.log("Server has started successfully");
 });
-
-
-//
-// app.listen(3000, function() {
-//   console.log("Server is running on port 3000")
-// });
